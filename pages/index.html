@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +8,16 @@
 		<script src="https://kit.fontawesome.com/4253f6c556.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="../css/estilos.css">
 	</head>
-	<body class="body">
-		<header id="header" class="header">
-			<a href="index.html">
-				<img class="logo" src="../assets/img/Logo.png" alt="Logo de pincho">
-			</a>
-			<nav>
-				<ul>
-					<li><a href="index.html">INICIO</a></li>
-					<li><i class="fa-solid fa-bag-shopping"></i> <a href="../pages/productos.html">PRODUCTOS</a></li>
-					<li><i class="fa-solid fa-cart-shopping"></i> <a href="../pages/carrito.html">CARRITO</a></li>
-					<li><a href="./contacto.html">CONTACTO</a></li>
-					<li><a href="#nosotros">NOSOTROS</a></li>
+	<body>
+		<header id="header">
+			<a href="index.html"><img class="logo" src="../assets/img/Logo.png" alt="Logo de pincho"></a>
+			<nav class="navHeader">
+				<ul class="ulHeader">
+					<li class="listaItem"><a class="linkHeader"  href="index.html">INICIO</a></li>
+					<li class="listaItem"><i></i> <a class="linkHeader" href="../pages/productos.html">PRODUCTOS</a></li>
+					<li class="listaItem"><a class="linkHeader" href="./contacto.html">CONTACTO</a></li>
+					<li class="listaItem"><a class="linkHeader" href="#nosotros">NOSOTROS</a></li>
+					<li class="listaItem"><i class="fa-solid fa-cart-shopping"></i> <a class="linkHeader" href="../pages/carrito.html"></a></li>
 				</ul>
 
 			</nav>
@@ -31,57 +29,63 @@
 				<!--Seccion principal-->
 				<div class="almaDeEspania">
 					<h1>El alma de España</h1>
-				<div>
-					<span class="fuente70px aUnBocadoDeDistancia">A UN BOCADO DE DISTANCIA</span>
+					<span class="aUnBocadoDeDistancia">A UN BOCADO DE DISTANCIA</span>
 				</div>
-				</div>
+
 				<div class="textoColor">
 					<p>Tapas, vino y buen rollo.</p>
 					<p>Encontrá tu rincón favorito en MOLA.</p>
-					<a href="#econtranos">ENCONTRANOS</a>
+
+					<div>
+						<a class="anclaEncontranos" href="#econtranos">ENCONTRANOS</a>
+					</div>
 				</div>
 			</section>
 
 			<section class="nuestrosProductos">
 				<!--Cards de productos destacados-->
 				<div class="nuestrosProductosAlineado"><a href="./productos.html" >NUESTROS PRODUCTOS</a></div>
-				<div class="cajasProducto">
-					<img src="../assets/img/box azules/andalucia-azul-box1.jpg" alt="caja box andalucia para preparar en casa" loading="lazy">
-					<h3>Kit Tapas del Sur "Andalucía"</h3>
-					<h4>$25000</h4>
-					<a href="">Agregar al Carrito</a>
-				</div>
-				<div class="cajasProducto">
-					<img src="../assets/img/Box Blancas/PAIS-VASCO.jpg" alt="caja box pais vasco para preparar en casa" loading="lazy">
-					<h3>Kit Tapas del Norte "País Vasco"</h3>
-					<h4>$25000</h4>
-					<a href="">Agregar al Carrito</a>
-				</div>
-				<div class="cajasProducto">
-					<img src="../assets/img/box azules/cataluña.jpg" alt="caja box cataluña para preparar en casa" loading="lazy">
-					<h3>Kit Tapas del Mediterraneo "Cataluña"</h3>
-					<h4>$25000</h4>
-					<a href="">Agregar al Carrito</a>
-				</div>
-				<div class="cajasProducto">
-					<img src="../assets/img/Box Blancas/castilla y leon.jpg" alt="caja box castilla y leon para preparar en casa" loading="lazy">
-					<h3>Kit de la Meseta "Castilla y León"</h3>
-					<h4>$25000</h4>
-					<a href="">Agregar al Carrito</a>
-				</div>
-				<div class="cajasProducto">
-					<img src="../assets/img/box azules/baleares.jpg" alt="caja box islas baleares para preparar en casa" loading="lazy">
-					<h3>Kit Islas "Baleares"</h3>
-					<h4>$25000</h4>
-					<a href="">Agregar al Carrito</a>
-				</div>
-				<div class="cajasProducto">
-					<img src="../assets/img/Box Blancas/galicia.jpg" alt="caja box Galicia para preparar en casa" loading="lazy">
-					<h3>Kit Noroeste "Galicia"</h3>
-					<h4>$25000</h4>
-					<a href="">Agregar al Carrito</a>
+
+				<div class="contenedorProductos">
+					<div class="cajasProducto">
+						<img src="../assets/img/box azules/andalucia-azul-box1.jpg" alt="caja box andalucia para preparar en casa" loading="lazy">
+						<h3>Kit Tapas del Sur "Andalucía"</h3>
+						<h4>$25000</h4>
+						<a href="">Agregar al Carrito</a>
+					</div>
+					<div class="cajasProducto">
+						<img src="../assets/img/Box Blancas/PAIS-VASCO.jpg" alt="caja box pais vasco para preparar en casa" loading="lazy">
+						<h3>Kit Tapas del Norte "País Vasco"</h3>
+						<h4>$25000</h4>
+						<a href="">Agregar al Carrito</a>
+					</div>
+					<div class="cajasProducto">
+						<img src="../assets/img/box azules/cataluña.jpg" alt="caja box cataluña para preparar en casa" loading="lazy">
+						<h3>Kit Tapas del Mediterraneo "Cataluña"</h3>
+						<h4>$25000</h4>
+						<a href="">Agregar al Carrito</a>
+					</div>
+					<div class="cajasProducto">
+						<img src="../assets/img/Box Blancas/castilla y leon.jpg" alt="caja box castilla y leon para preparar en casa" loading="lazy">
+						<h3>Kit de la Meseta "Castilla y León"</h3>
+						<h4>$25000</h4>
+						<a href="">Agregar al Carrito</a>
+					</div>
+					<div class="cajasProducto">
+						<img src="../assets/img/box azules/baleares.jpg" alt="caja box islas baleares para preparar en casa" loading="lazy">
+						<h3>Kit Islas "Baleares"</h3>
+						<h4>$25000</h4>
+						<a href="">Agregar al Carrito</a>
+					</div>
+					<div class="cajasProducto">
+						<img src="../assets/img/Box Blancas/galicia.jpg" alt="caja box Galicia para preparar en casa" loading="lazy">
+						<h3>Kit Noroeste "Galicia"</h3>
+						<h4>$25000</h4>
+						<a href="">Agregar al Carrito</a>
+					</div>
 				</div>
 			</section>
+
 			<section>
 				<!--la imagen de cada sec la vamos a colocar con css con la propiedad backgroun image-->
 				

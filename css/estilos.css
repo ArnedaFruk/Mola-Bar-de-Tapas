@@ -5,17 +5,75 @@
 
 *{
 	font-family: "Poppins", sans-serif;
-
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 
-h1, h2, h3, h4, h5, h6{font-family: "Alfa Slab One", serif;
-  font-weight: 400;
-  font-style: normal;
+h1, h2, h3, h4, h5, h6{
+	font-family: "Alfa Slab One", serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
-h3{ font-size: 40px;}
-h1{font-size: 30px;}
+h3{ font-size: 2rem;}
+h1{font-size: 3rem;}
+
+body{
+	background-color:white;
+}
+
+
+header{
+	background-color:#687086;
+	.logo{width: 150px;}
+		/*filter: invert();*/
+
+	i {color: white;}
+	.navHeader{
+		display: inline-block;
+		.ulHeader{
+			list-style: none;
+			.listaItem{ 
+				display: inline-block;
+				margin-right: 15px;
+
+				.linkHeader{
+					color: #dddcd4;;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.sectionPrincipal{
+
+	background-image: url(../assets/img/tapa\ iberica.jpg);
+	background-size: cover; /*Para que la imagen ocupe todo el espacio disponible*/
+	background-position: top; /*Para que la imagen siempre comience desde el centro del contenedor y se expanda*/
+	/*height: 80vh;*/
+	color: white;
+	width: 100%;
+	padding-top: 60px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	div{color:white; font-size: 3rem;}
+	p{color: #faf5f5;font-size: 1.25rem;}
+	.anclaEncontranos{
+		display: block; /*nos permite trabajar las anclas como elementos en bloque*/
+		color: gold; 
+		text-decoration: none;
+		margin-top: 120px;
+		text-align: center;
+	}
+	.textoColor{
+		color: white;
+	}
+}
+
 
 .div50porciento{
 
@@ -27,53 +85,49 @@ h1{font-size: 30px;}
 
 .aUnBocadoDeDistancia{
 	font-family: "Alfa Slab One";
-	
-}
-
-
-.fuente70px{
-	
-	font-size: 70px;
-}
-
-.sectionPrincipal{
-	
-	background-image: url(../assets/img/tapa\ iberica.jpg);
-	background-size: cover; /*Para que la imagen ocupe todo el espacio disponible*/
-	background-position: top; /*Para que la imagen siempre comience desde el centro del contenedor y se expanda*/
-	height: 80vh;
-	div{color:white; font-size: 3rem;}
-	color: white;
-	p{color: #faf5f5;font-size: 3vh;}
-	a{color: gold; text-decoration: none;}
-	.textoColor{
-		color: white;
-	}
+	font-size: 4.5rem;
 }
 
 
 .almaDeEspania{
-h1{font-family: "Poppins", sans-serif; color: white; font-size: 1em;}
+	padding-top: 100 px;
+	h1{
+		font-family: "Poppins", sans-serif; color: white;
+		font-size: 1em;
+	}
+
 }
 
 
 
 .nuestrosProductos{
-	a{
-		color: #000000; 
-		text-decoration: none; 
-		font-family: "Alfa Slab One"; 
-		font-size: 5vh;
-	}
 
 }
 
 .nuestrosProductosAlineado{
 	text-align: center;
+	margin-top: 50px;
+
+	a{
+		color: #000000; 
+		text-decoration: none; 
+		font-family: "Alfa Slab One"; 
+		font-size: 2rem;
+		
+	}
 
 }
 
+.contenedorProductos{
+	overflow: scroll;
+	width: 100%;
+
+}
 .cajasProducto{
+	display: inline-block;
+	width: 15%;
+
+
 	h3{
 		font-size: 1.2rem;
 		color: #414141;
@@ -84,11 +138,14 @@ h1{font-family: "Poppins", sans-serif; color: white; font-size: 1em;}
 	h4{ font-size: 1.2rem;color: #414141;}
 	a{
 		font-size: 1.2rem;
-		color: #ffd700;	}
+		color: #ffd700;	
+	}
 }
 	
 
-	
+.blur{
+	backdrop-filter: blur(70px);
+}
 
 
 .secretosDeNuestroChef{
@@ -96,27 +153,34 @@ h1{font-family: "Poppins", sans-serif; color: white; font-size: 1em;}
 	background-size: cover;
 	background-position: top center;
 	color: white;
-	height: 80vh;
+	padding: 150px 0;
 	h2{font-size: 2rem;}
-	p{width: 56%; font-size: 5vh;}
-	a{color: gold; font-size: 3vh;}
+	p{ border-radius: 20px;  width: 56%; font-size: 1.8rem;}
+	a{color: gold; font-size: 1.2rem;}
 	
 	
 }
-.blur{
-	backdrop-filter: blur(70px);
-}
-
 
 .eventoTematicoDelMes{
 	background-image: url(../assets/img/flamenco-594272_1920.jpg);
 	background-size: cover;
 	background-position: top center;
 	color: white;
-	height: 80vh;
+	padding: 150px 0;
 	h2{font-size: 2rem;}
-	p{ font-size: 5vh;}
-	a{color: gold; font-size: 3vh;}
+	p{ font-size: 1.8rem;}
+	a{	
+		display:inline-block;
+		color: gold; font-size: 1.2rem;
+		padding: 8px;
+		margin-top: 50px;
+		border: 1px solid #faf9f9;
+		border-radius: 5px;
+		box-shadow: 34px 39px 29px 23px #fcfafabf;
+		background-color: white;
+
+	
+	}
 	
 }
 
@@ -124,32 +188,11 @@ h1{font-family: "Poppins", sans-serif; color: white; font-size: 1em;}
 	h2{
 		color: #000000;
 		text-align: center;
-		font-size: 10vh;}
+		font-size: 3.8rem;
 	}
-
-
-		
-	
-
-
-.header{
-	.logo{
-		width: 250px;
+	img{
+		width: 100%;
 	}
-	ul{
-		list-style: none;
-	}
-	background-color:#3C4765;
-	color: #000000;
-	a{
-		color: #dddcd4;;
-		text-decoration: none;
-	}
-	i {color: white;}
-}
-
-.body{
-	background-color:white;
 }
 
 .footer{
@@ -165,7 +208,7 @@ h1{font-family: "Poppins", sans-serif; color: white; font-size: 1em;}
 		color: #dddcd4;
 		text-decoration: none;
 	}
-	address{color: white; font-size: 3vh;}
+	address{color: white; font-size: 1rem;}
 	i {color: white;}
 	.fa-whatsapp{
 		color: #25d366;
