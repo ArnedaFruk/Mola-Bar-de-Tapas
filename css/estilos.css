@@ -26,6 +26,8 @@ body{
 
 
 header{
+	position: sticky;
+	top: 0;
 	padding: 5px 15px;
 	background-color:#687086;
 	.logo{
@@ -79,7 +81,7 @@ header{
 
 .sectionPrincipal{
 
-	background-image: url(../assets/img/tapa\ iberica.jpg);
+	background-image: radial-gradient(circle, #00000086, #00000027), url(../assets/img/tapa\ iberica.jpg);
 	background-size: cover; /*Para que la imagen ocupe todo el espacio disponible*/
 	background-position: top; /*Para que la imagen siempre comience desde el centro del contenedor y se expanda*/
 	/*height: 80vh;*/
@@ -178,7 +180,7 @@ header{
 
 
 .secretosDeNuestroChef{
-	background-image: url(../assets/img/alcoholic-beverages-1845295_1920.jpg);
+	background-image: radial-gradient(circle, #000000e1, #00000000), url(../assets/img/alcoholic-beverages-1845295_1920.jpg);
 	background-size: cover;
 	background-position: top center;
 	color: white;
@@ -191,7 +193,7 @@ header{
 }
 
 .eventoTematicoDelMes{
-	background-image: url(../assets/img/flamenco-594272_1920.jpg);
+	background-image: radial-gradient(circle, #000000e1, #00000000), url(../assets/img/flamenco-594272_1920.jpg);
 	background-size: cover;
 	background-position: top center;
 	color: white;
