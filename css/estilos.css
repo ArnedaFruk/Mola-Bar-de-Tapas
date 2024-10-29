@@ -96,9 +96,14 @@ header{
 	.anclaEncontranos{
 		display: block; /*nos permite trabajar las anclas como elementos en bloque*/
 		color: gold; 
+		background-color: #000000be;
 		text-decoration: none;
 		margin-top: 120px;
 		text-align: center;
+		
+
+
+
 	}
 	.textoColor{
 		color: white;
@@ -107,10 +112,7 @@ header{
 
 
 .div50porciento{
-
-	width: 50%;
-	
-	
+	width: 50%;	
 }
 
 
@@ -174,8 +176,14 @@ header{
 }
 	
 
-.blur{
-	backdrop-filter: blur(70px);
+.pruebaSection{
+	display: flex;
+	flex-wrap: wrap ;
+	justify-content: space-evenly;
+	h2{text-align: center;}
+	p{text-align: center;}
+	a{text-align: center;}
+
 }
 
 
@@ -183,11 +191,12 @@ header{
 	background-image: radial-gradient(circle, #000000e1, #00000000), url(../assets/img/alcoholic-beverages-1845295_1920.jpg);
 	background-size: cover;
 	background-position: top center;
+	border: 5px solid black;
 	color: white;
 	padding: 150px 0;
 	h2{font-size: 2rem;}
 	p{ border-radius: 20px;  width: 56%; font-size: 1.8rem;}
-	a{color: gold; font-size: 1.2rem;}
+	a{ color: gold; font-size: 1.2rem;}
 	
 	
 }
@@ -196,6 +205,7 @@ header{
 	background-image: radial-gradient(circle, #000000e1, #00000000), url(../assets/img/flamenco-594272_1920.jpg);
 	background-size: cover;
 	background-position: top center;
+	border: 5px solid black;
 	color: white;
 	padding: 150px 0;
 	h2{font-size: 2rem;}
