@@ -29,13 +29,18 @@ header{
 	position: sticky;
 	top: 0;
 	padding: 5px 15px;
-	background-color:#687086;
+	background-color:#4d66ab;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 	.logo{
 		width: 150px;
 		display: inline-block;
 		font-size: 0;
 		vertical-align: middle;
 		/*solicion chat gpt*/
+	
 
 		img{
 			width: 100%
@@ -60,7 +65,7 @@ header{
 				
 			
 			.linkHeader{
-			color: #dddcd4;;
+			color: #ffffff;;
 			text-decoration: none;
 			display: inline-block;
 			padding-top: 5px;
@@ -83,98 +88,170 @@ header{
 
 	background-image: radial-gradient(circle, #00000086, #00000027), url(../assets/img/tapa\ iberica.jpg);
 	background-size: cover; /*Para que la imagen ocupe todo el espacio disponible*/
-	background-position: top; /*Para que la imagen siempre comience desde el centro del contenedor y se expanda*/
-	/*height: 80vh;*/
+	background-position: center; /*Para que la imagen siempre comience desde el centro del contenedor y se expanda*/
+	/*height: 95vh;*/
+	height: 560px;
+	
 	color: white;
 	width: 100%;
-	padding-top: 60px;
+	/*padding-top: 60px;*/
 	padding-left: 15px;
 	padding-right: 15px;
+	padding-top: 150px;
+	padding-bottom: 60px;
+	/*padding-bottom: 60px;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 
-	div{color:white; font-size: 3rem;}
+
+
+	div{color:white; font-size: 3rem; }
 	p{color: #faf5f5;font-size: 1.25rem;}
+
+	.divAnclaEncontranos{
+		/*margin-top: 80px;*/
+	}
+
 	.anclaEncontranos{
-		display: block; /*nos permite trabajar las anclas como elementos en bloque*/
+		/*display: block; /*nos permite trabajar las anclas como elementos en bloque*/
 		color: gold; 
-		background-color: #000000be;
 		text-decoration: none;
-		margin-top: 120px;
+		/*margin-top: 120px;*/
 		text-align: center;
+		margin-left: 40%;
+		border-radius: 2px;
+		border: solid #ececec 2.5px;
+		padding: 10px 20px;
 		
-
-
+		font-size: 30px;
+		
+		
+	
+		
+		
+	
 
 	}
 	.textoColor{
 		color: white;
+		text-shadow: black 0.2em 0.2em 0.3em;
 	}
 }
 
 
-.div50porciento{
+/*.div50porciento{
 	width: 50%;	
-}
+}*/
 
 
 .aUnBocadoDeDistancia{
 	font-family: "Alfa Slab One";
 	font-size: 4.5rem;
+	text-shadow: black 0.1em 0.1em 0.6em;
 }
 
 
 .almaDeEspania{
-	padding-top: 100 px;
+	/*padding-top: 100 px;*/
 	h1{
 		font-family: "Poppins", sans-serif; color: white;
 		font-size: 1em;
-	}
+		/*padding-top: 10%;*/
+		text-shadow: black 0.2em 0.2em 0.3em;
+		}
 
 }
 
 
 
 .nuestrosProductos{
+	/*height: 75vh;*/
+	height: 560px;
+
 
 }
 
 .nuestrosProductosAlineado{
 	text-align: center;
-	margin-top: 50px;
+	/*margin-top: 50px;
+	margin-bottom: 50px;*/
+	padding-top: 50px;
+	padding-bottom: 40px;
 
 	a{
 		color: #000000; 
 		text-decoration: none; 
 		font-family: "Alfa Slab One"; 
-		font-size: 2rem;
+		font-size: 3rem;
 		
 	}
 
 }
 
 .contenedorProductos{
-	overflow: scroll;
-	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	list-style: none;
+	gap: 20px;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: 0 auto;
+	padding: 15px;
+	
 
 }
 .cajasProducto{
-	display: inline-block;
+	/*display: inline-block;*/
+	height: 350px;
 	width: 15%;
+	border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra */
+	text-align: center;
+	/*margin-bottom: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;*/
+	
+	
 
-
+	img{
+		width: 80%;
+	}
 	h3{
 		font-size: 1.2rem;
 		color: #414141;
+		margin-top: 15px;
+		height: 70px;
+	
 	}
-	img{
-		width: 25%;
-	}
-	h4{ font-size: 1.2rem;color: #414141;}
-	a{
+	h4{ 
 		font-size: 1.2rem;
-		color: #ffd700;	
+		color: #414141;
+		margin-top: 15px;
+		margin-bottom: 20px;
+		
+	}
+	a{/*Si quisiera darle padding al ancla debo usar displa: inline-block*/
+		display: inline-block;
+		font-size: 1.2rem;
+		color: #ffd700;
+		margin-top: 10px;
+		padding: 5px 10px;
+
 	}
 }
-	
+
+.tarjetaSectionEvento{
+	display: flex;
+	flex-wrap: nowrap ;
+	justify-content: space-evenly;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+
+}
 
 .pruebaSection{
 	display: flex;
@@ -191,12 +268,27 @@ header{
 	background-image: radial-gradient(circle, #000000e1, #00000000), url(../assets/img/alcoholic-beverages-1845295_1920.jpg);
 	background-size: cover;
 	background-position: top center;
-	border: 5px solid black;
+	/*border: 15px solid #ffffff;*/
 	color: white;
-	padding: 150px 0;
-	h2{font-size: 2rem;}
-	p{ border-radius: 20px;  width: 56%; font-size: 1.8rem;}
-	a{ color: gold; font-size: 1.2rem;}
+	/*padding: 150px 0;*/
+	height: 400px;
+	width: 45%;
+	box-shadow: #000000;
+	padding-top: 150px;
+	h2{
+		font-size: 2rem; 
+		font-family: "Poppins", sans-serif; 
+		padding-right: 10px;
+	padding-left: 10px;}
+	p{
+		font-size: 2rem; 
+		font-family: "Alfa Slab One", serif;
+		padding-right: 10px;
+		padding-left: 70px;
+		background-color: #ffffffad;
+		color: #000000;
+	}
+
 	
 	
 }
@@ -205,34 +297,166 @@ header{
 	background-image: radial-gradient(circle, #000000e1, #00000000), url(../assets/img/flamenco-594272_1920.jpg);
 	background-size: cover;
 	background-position: top center;
-	border: 5px solid black;
+	/*border: 15px solid white;*/
+	height: 400px;
+	width: 45%;
 	color: white;
-	padding: 150px 0;
-	h2{font-size: 2rem;}
-	p{ font-size: 1.8rem;}
-	a{	
-		display:inline-block;
-		color: gold; font-size: 1.2rem;
-		padding: 8px;
-		margin-top: 50px;
-		border: 1px solid #faf9f9;
-		border-radius: 5px;
-		box-shadow: 34px 39px 29px 23px #fcfafabf;
-		background-color: white;
-
-	
+	padding-top: 150px;
+	box-shadow: #000000;
+	h2{
+		font-size: 2rem; 
+		font-family: "Poppins", sans-serif;
+		padding-left: 10px
 	}
-	
+	p{ 
+		font-size: 2rem; 
+		font-family: "Alfa Slab One", serif;
+		text-align: right;
+		padding-right: 5px;
+		background-color: #ffffffad;
+		color: #000000;
+	}
+
 }
 
-.sectionNuestraHistoria{
+.botonCentrado{
+	text-align: center;
+	margin-top: 20px;
+	
+	a{	
+	
+		color: gold; 
+		font-size: 1.2rem; 
+		text-decoration: none;	
+		padding: 5px 10px;
+		background-color: #000000;
+		border: 1px solid rgba(255, 255, 255, 0.753);
+		
+	}
+		
+}
+
+.tituloNosotros{
 	h2{
 		color: #000000;
 		text-align: center;
 		font-size: 3.8rem;
+		padding-bottom: 30px;
+		padding-top: 30px;
 	}
+}
+.sectionNuestraHistoria{
+
+display: flex;
+align-items: center;
+padding-left: 20px;
+padding-right: 20px;
+gap: 40px;
+
+
 	img{
-		width: 100%;
+		/*padding-top: 200px;*/
+		width: 600px;
+	}
+	p{
+		font-size: 1.5 rem;
+		color: #303030;
+		text-align: justify;
+		padding-bottom: 15px
+		;
+		
+	}
+}
+
+.coffee-grid {
+	padding: 2rem;
+	text-align: center;
+
+  }
+  
+  .title {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+  }
+  
+  .coffee-options {
+	display: grid;
+	grid-template-columns: 1fr 1fr; /* Dos columnas para que la imagen esté centrada */
+	gap: 1.5rem; /* Espacio entre los elementos */
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+  
+  .coffee-item {
+	background-color: #fff;
+	padding: 1rem;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: left;
+	p{
+		font-size: 1.5rem;
+		
+	}
+  }
+  
+  .coffee-item h3 {
+	text-align: center;
+	font-size: 1.2rem;
+	color: #424242; /* Color similar al del ejemplo */
+	margin-bottom: 0.5rem;
+	
+  }
+  
+  .coffee-item p {
+	font-size: 1rem;
+	color: #333;
+  }
+  
+  /* Ajustes para la imagen central */
+  .image {
+	grid-column: span 2; /* Hace que la imagen ocupe las dos columnas */
+	
+  }
+  
+  .image img {
+	width: 100%;
+	border-radius: 5px;
+	max-height: 400px; /* Controla el alto de la imagen */
+	object-fit: cover;
+	object-position: center;
+  }
+
+.molaCerca{
+	background-image: radial-gradient(circle, #000000e1, #00000000), url(../assets/img/Imagen_encontranos.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	h2{
+		color: white;
+		font-size: 3rem;
+		text-align: center;
+		padding-top: 150px ;
+	}
+	h3{
+		color: white;
+		font-size: 2.5rem;
+		text-align: center;
+	}
+	p{
+		color: white;
+		font-size: 1.5rem;
+		text-align: center;
+		margin-bottom: 70px;
+	}
+	a{
+		color: gold;
+		font-size: 2rem;
+		text-align: center;
+		text-decoration: none;
+		border: solid rgb(146, 146, 146) 2px;
+		padding: 3px;
+
+		margin-left: 42%;
 	}
 }
 
