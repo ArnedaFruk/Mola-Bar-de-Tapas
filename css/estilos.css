@@ -86,7 +86,7 @@ header{
 
 .sectionPrincipal{
 
-	background-image: radial-gradient(circle, #00000086, #00000027), url(../assets/img/tapa\ iberica.jpg);
+	background-image: radial-gradient(circle, #00000086, #00000027), url(../assets/img/cuadraditos.jpg);
 	background-size: cover; /*Para que la imagen ocupe todo el espacio disponible*/
 	background-position: center; /*Para que la imagen siempre comience desde el centro del contenedor y se expanda*/
 	/*height: 95vh;*/
@@ -354,6 +354,7 @@ padding-right: 20px;
 gap: 40px;
 
 
+
 	img{
 		/*padding-top: 200px;*/
 		width: 600px;
@@ -368,63 +369,75 @@ gap: 40px;
 	}
 }
 
-.coffee-grid {
-	padding: 2rem;
+.huertaMola{
 	text-align: center;
+	padding: 20px;
+	h2{font-size: 3rem}
+}
 
-  }
-  
-  .title {
-	font-size: 2rem;
-	margin-bottom: 1rem;
-  }
-  
-  .coffee-options {
-	display: grid;
-	grid-template-columns: 1fr 1fr; /* Dos columnas para que la imagen esté centrada */
-	gap: 1.5rem; /* Espacio entre los elementos */
-	max-width: 1200px;
+.contenedorGridHuerta{
+	/*width: 93%;
 	margin: 0 auto;
-  }
-  
-  .coffee-item {
-	background-color: #fff;
-	padding: 1rem;
-	border-radius: 5px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	text-align: left;
-	p{
-		font-size: 1.5rem;
+	/*height: 100vh;
+	height: 225vh;*/
+	width: 90%;
+	/*height: 100vh;*/
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "textoUno video textoDos"
+						 "textoTres video textoCuatro";
+	gap: 25px;
+
+	.contenedorVideo{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		padding-bottom: 50px;
 		
+		
+		video {
+			/*width: 100%;
+			height: 100%;*/
+			object-fit: cover;
+			display: block;
+			margin: 0 auto;
+			
+			}
+			
 	}
-  }
-  
-  .coffee-item h3 {
-	text-align: center;
-	font-size: 1.2rem;
-	color: #424242; /* Color similar al del ejemplo */
-	margin-bottom: 0.5rem;
-	
-  }
-  
-  .coffee-item p {
-	font-size: 1rem;
-	color: #333;
-  }
-  
-  /* Ajustes para la imagen central */
-  .image {
-	grid-column: span 2; /* Hace que la imagen ocupe las dos columnas */
-	
-  }
-  
-  .image img {
-	width: 100%;
-	border-radius: 5px;
-	max-height: 400px; /* Controla el alto de la imagen */
-	object-fit: cover;
-	object-position: center;
-  }
+
+}
+
+.textoUno{
+	grid-area: textoUno;
+
+}
+.textoDos{
+	grid-area: textoDos;
+
+}
+
+.video{
+	grid-area: video;
+}
+
+.textoTres{
+	grid-area: textoTres;
+
+}
+.textoCuatro{
+	grid-area: textoCuatro;
+
+}
+
+.contendorTexto{
+	h3{
+		font-size: 1.5rem;
+}
+}
+
 
 .molaCerca{
 	background-image: radial-gradient(circle, #000000e1, #00000000), url(../assets/img/Imagen_encontranos.jpg);
@@ -459,6 +472,58 @@ gap: 40px;
 		margin-left: 42%;
 	}
 }
+/*FIN DEL INDEX*/
+/*PAGINA | PRODUCTOS*/
+
+.galeriaGrid{
+	width: 93%;
+	margin: 0 auto;
+	/*height: 100vh;*/
+	height: 225vh;
+	display: grid;
+	grid-template-columns: 1fr 0.75fr;
+	grid-template-rows: 1fr 1fr 0.5fr 1fr;
+	grid-template-areas: "cheescake chocotorta"
+						 "budin chocotorta"
+						 "cuadradito chocotorta"
+						 "cuadradito alfajores";
+	gap: 25px;
+
+	.contenedorImagen{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			}
+	}
+
+	.cheescake{
+		grid-area: cheescake;
+	}
+	.chocotorta{
+		grid-area: chocotorta;
+	}
+	.budin{
+		grid-area: budin;
+	}
+	.cuadradito{
+		grid-area: cuadradito;
+	}
+	.alfajores{
+		grid-area: alfajores;
+	}
+
+}
+.margin{
+	padding: 20px;
+	text-align: center;
+}
+
+
+
 
 .footer{
 	.logo{
