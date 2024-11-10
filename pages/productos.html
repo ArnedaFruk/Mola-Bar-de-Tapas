@@ -29,19 +29,19 @@
 				<h1>GALERIA</h1>
 			</div>
 				<div class="galeriaGrid">
-					<div class="contenedorImagen cheescake">
+					<div class="contenedorImagen cheescake transicionFoto">
 						<img src="../assets/img/Horizontal/Cheescake.jpg" alt="">
 					</div>
-					<div class="contenedorImagen budin">
+					<div class="contenedorImagen budin transicionFoto">
 						<img src="../assets/img/Horizontal/Budin de Naranja.jpg" alt="">
 					</div>
-					<div class="contenedorImagen chocotorta">
+					<div class="contenedorImagen chocotorta transicionFoto">
 						<img src="../assets/img/Horizontal/Chocotorta.jpg" alt="">
 					</div>
-					<div class="contenedorImagen cuadradito">
+					<div class="contenedorImagen cuadradito transicionFoto">
 						<img  src="../assets/img/Horizontal/cuadraditos.jpg" alt="">
 					</div>
-					<div class="contenedorImagen alfajores">
+					<div class="contenedorImagen alfajores transicionFoto">
 						<img  src="../assets/img/Horizontal/alfajores.jpg" alt="">
 					</div>
 				</div>
@@ -50,20 +50,26 @@
 
 		</div>
 </main>
-		<footer class="footer">
+<footer>
+	<div class="footer">
+		<div>
 			<a href="index.html">
 				<img class="logo" src="../assets/img/Logo.png" alt="Logo de pincho">
 			</a>
+		</div>
+		<div>
 			<nav>
 				<h3>CONTENIDOS</h3>
 				<ul>
 					<li><a href="index.html">INICIO</a></li>
-					<li><i class="fa-solid fa-bag-shopping"></i> <a href="../pages/productos.html">PRODUCTOS</a></li>
-					<li><i class="fa-solid fa-cart-shopping"></i> <a href="../pages/carrito.html">CARRITO</a></li>
+					<li><a href="../pages/productos.html">PRODUCTOS</a></li>
+					<li><a href="../pages/carrito.html">CARRITO</a></li>
 					<li><a href="../pages/contacto.html">CONTACTO</a></li>
 					<li><a href="#nosotros">NOSOTROS</a></li>
 				</ul>
 			</nav>
+		</div>
+		<div>
 			<nav>
 				<h3>MOLA TE AYUDA</h3>
 				<ul>
@@ -71,42 +77,34 @@
 					<li><a href="">Preguntas Frecuentes</a></li>
 					<li><a href="">Aviso de Privacidad</a></li>
 					<li><a href="">Terminos y Condiciones</a></li>
+					<li><a href="">Opiniones de Clientes</a></li>
 				</ul>
-				
-
 			</nav>
-			<div>
-				<h3>MEMBRESIA EXCLUSIVA "CLUB MOLA"</h3>
-				<p>Registrate y obtene descuentos exclusivos.</p>
-				<form action="">
-					<input type="email" placeholder="Tu Email" id="emailRegistro" name="emailRegistro">
-					<input type="submit" value="SUSCRIBIRME">
-				</form>
-			</div>
-			<div>
-				<h3>SEGUI LAS NOVEDADES EN NUESTRAS REDES</h3>
+		</div>
+		<div>
+			<h3>MEMBRESIA EXCLUSIVA "CLUB MOLA"</h3>
+			<p>Registrate y obtene descuentos exclusivos.</p>
+			<form action="" class="botonSuscripcion">
+				<input type="email" placeholder="Tu Email" id="emailRegistro" name="emailRegistro">
+				<input type="submit" value="SUSCRIBIRME">
+			</form>
+			<h3>CONECTATE CON NOSOTROS</h3>
+			<div class="redesSociales">
 				<a href="https://www.facebook.com/" target="_blank">
 					<i class="fab fa-facebook"></i>
 				</a>
 				<a href="https://www.instagram.com/" target="_blank">
 					<i class="fab fa-instagram"></i>
 				</a>
-			</div>
-			<div>
 				<a href="https://web.whatsapp.com/" target="_blank">
 					<i class="fab fa-whatsapp"></i>
 				</a>
 			</div>
-			<address>
-				<p>Dirección: Av. Siempre viva 1234</p>
-				<p>Telefono: +54 1152528940</p>
-				<p>Correo Electronico: mola@contacto.com</p>
-			</address>
-			<div>
-				<p>&copy; 2025 Mola Bar de Tapas. Todos los derechos reservados.</p>
-			</div>
-
-
-		</footer>
+		</div>
+</div>
+<div>
+	<p>&copy; 2025 Mola Bar de Tapas. Todos los derechos reservados.</p>
+</div>
+</footer>
 	</body>
 </html>
