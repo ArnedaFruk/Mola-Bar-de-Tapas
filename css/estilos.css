@@ -6,12 +6,6 @@ html{
 	font-size: 16px;
 }
 
-@media screen and (max-width: 768px) {
-	html{
-		font-size: 12px;
-	}
-	
-}
 
 *{
 	font-family: "Poppins", sans-serif;
@@ -119,22 +113,19 @@ header{
 	div{color:white; font-size: 3rem; }
 	p{color: #faf5f5;font-size: 1.25rem;}
 
-	.divAnclaEncontranos{
-		/*margin-top: 80px;*/
-	}
-
 	.anclaEncontranos{
-		/*display: block; /*nos permite trabajar las anclas como elementos en bloque*/
+		display: block; /*nos permite trabajar las anclas como elementos en bloque*/
 		color: gold; 
 		text-decoration: none;
 		/*margin-top: 120px;*/
 		text-align: center;
-		margin-left: 40%;
+		margin: 0% auto;
+		width: 25%;
 		border-radius: 2px;
 		border: solid #ececec 2.5px;
 		padding: 10px 20px;
 		
-		font-size: 30px;
+		font-size: 2rem;
 		
 		
 	
@@ -256,7 +247,6 @@ header{
 
 .tarjetaSectionEvento{
 	display: flex;
-	flex-wrap: nowrap ;
 	justify-content: space-evenly;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -290,7 +280,7 @@ header{
 		font-size: 2rem; 
 		font-family: "Poppins", sans-serif; 
 		padding-right: 10px;
-	padding-left: 10px;}
+		padding-left: 10px;}
 	p{
 		font-size: 2rem; 
 		font-family: "Alfa Slab One", serif;
@@ -498,7 +488,7 @@ gap: 40px;
 		font-size: 2rem;
 		text-align: center;
 		text-decoration: none;
-		border: solid rgb(146, 146, 146) 2px;
+		border: solid rgb(255, 255, 255) 2px;
 		padding: 3px;
 
 		margin-left: 42%;
@@ -676,4 +666,104 @@ ul{
 }
 .espaciadoLebel{
 	padding-top: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+	html{
+		font-size: 12px;
+	}
+
+	.sectionPrincipal {
+	
+		.anclaEncontranos {
+			width: 60%;
+		}
+	}
+
+	.nuestrosProductos{
+		height: auto;
+	}
+	
+	.cajasProducto{
+		width: 100%;
+		height: auto;
+		h3{
+			height: auto;
+		}
+		h4{
+			margin-top: 5px ;
+		}
+		a{
+			font-size: 2rem;
+		}
+	}
+	.tarjetaSectionEvento{
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+	.secretosDeNuestroChef{
+		width: 100%;
+		height: auto;
+		padding-top: 75px;
+		padding-bottom: 75px;
+		p{
+			font-size: 1.9rem;
+		}
+		
+	}
+	.eventoTematicoDelMes{
+		width: 100%;
+		height: auto;
+		padding-top: 75px;
+		padding-bottom: 75px;
+		p{
+			font-size: 1.8rem;
+			padding-right: 25px;
+		}
+	}
+	.sectionNuestraHistoria{
+		
+		.imagenMovil{
+			display: none;
+		}
+	}
+	.contenedorGridHuerta{
+		/*width: 93%;
+		margin: 0 auto;
+		/*height: 100vh;
+		height: 225vh;*/
+		width: 97%;
+		/*height: 100vh;*/
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas: "textoUno textoDos"
+							 "video video"
+							 "textoTres textoCuatro";
+		.contenedorVideo{
+			padding-bottom: 10px;
+			video{
+				height: 200px;
+			}
+		}
+
+}
+
+	.molaCerca{
+		a{
+			margin: 0 auto;
+			width: 60%;
+			display: block;
+			
+			
+		
+		}
+	}
+	.footer{
+		flex-wrap: wrap;
+		div
+		{width: 100%;}
+	}
 }
