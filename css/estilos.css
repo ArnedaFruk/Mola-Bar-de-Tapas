@@ -767,3 +767,62 @@ ul{
 		{width: 100%;}
 	}
 }
+
+/*Galeria de Maridajes*/
+
+body{
+    background: #ffffff;
+}
+header{
+    padding: 20px;
+	
+}
+	
+footer{
+   
+    margin-top:20px;}
+    
+
+
+.maridajes{
+    width: 100%;
+    margin:0 auto;
+    height: 75vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	
+    
+	
+}
+
+.maridajes img{
+    width: 0px;
+    height:100%;
+    flex-grow: 1;/*que dentro de la caja flexible ocupe todo el espacio que pueda*/
+    object-fit: cover;
+    opacity: 0.8;
+    transition: .5s ease;
+}
+
+
+.maridajes img:hover{
+    width: 30%;
+    opacity: 1;
+    filter:contrast(120%);
+    
+}
+
+@media screen and (max-width: 768px){
+    .maridajes{
+        flex-wrap: wrap;
+    }
+    .maridajes img{
+        height: 80%;
+    }
+    .maridajes img:hover{
+        width: 70%;
+        
+    }
+}
