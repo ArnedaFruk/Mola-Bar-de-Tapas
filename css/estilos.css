@@ -617,6 +617,7 @@ ul{
 	padding-bottom: 25px;
 }
 
+
 /*FIN DEL FOOTER*/
 /*PAGINA | CONTACTO*/
 
@@ -767,8 +768,8 @@ ul{
 		{width: 100%;}
 	}
 }
-
-/*Galeria de Maridajes*/
+/*FIN DE PAGINA | CONTACTO*/
+/*SECTION MARIDAJES*/
 
 body{
     background: #ffffff;
@@ -825,4 +826,25 @@ footer{
         width: 70%;
         
     }
+}
+
+/*FIN DE PAGINA | SECTION MARIDAJES*/
+/*SECTION TABLAO*/
+
+.tablao{
+	background-image: radial-gradient(circle, #00000010, #000000c2), url(../assets/img/evento_tematico_del_mes/banner.jpg);
+	background-size: cover; 
+	background-position: center; 
+	height: 560px;
+	color: white;
+	width: 100%;
+
+	h2{ font-size: 4.5rem;
+	    padding-top: 200px;
+	    padding-left: 550px;
+		text-shadow: black 0.1em 0.1em 0.6em;}
+	p{ font-size: 1.5rem;
+	padding-left: 450px;
+	text-shadow: black 0.3em 0.3em 0.6em;
+}
 }
