@@ -206,7 +206,7 @@ header{
 }
 .cajasProducto{
 	/*display: inline-block;*/
-	height: 350px;
+
 	width: 15%;
 	border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra */
@@ -631,17 +631,18 @@ ul{
 	padding-bottom: 150px;
 	padding-left: 50px;
 	padding-right: 50px;
+	text-align: center;
 
 	h1{
 		color: rgba(255, 255, 255, 0.63);
-		font-size: 1.8rem;
+		font-size: 1.3rem;
 		padding-bottom: 15px;
 		
 
 	}
 	h2{
 		color: rgba(255, 255, 255, 0.63);
-		font-size: 1.5rem;
+		font-size: 1rem;
 		padding-bottom: 15px;
 		padding-top: 15px;
 	
@@ -649,18 +650,41 @@ ul{
 	p{
 		color:rgba(255, 255, 255, 0.63);
 		padding-bottom: 5px;
+		font-size: 0.8rem;
 		
 		
 	}
 	label{ 
 		color: rgba(255, 255, 255, 0.63);
 		
+		
+	}
+	input {
+		background-color: rgba(78, 77, 77, 0.24);
+		border: solid rgba(255, 255, 255, 0.63) 1px;
+		border-radius: 5px;
+		color: rgba(255, 255, 255, 0.548);
+		
+	
+	  }
+	button {
+		background-color: rgba(78, 77, 77, 0.24);
+		border: solid rgba(255, 255, 255, 0.63) 1px;
+		border-radius: 5px;
+		color: white;
+		margin-top: 5px;
+		padding: 2px 1px;
+
 	}
 
 }
 .centrado {
 	width: 40%;
 	margin: 0% auto;
+	background-color: #30303062;
+	
+	padding: 10px 10px;
+	border-radius: 5px;
 }
 .espaciado{
 	padding-right: 13px;
@@ -669,6 +693,34 @@ ul{
 	padding-top: 15px;
 }
 
+.sucursalCercana{
+	background-color: #fdfdff;
+	text-align: center;
+	h1{font-size: 2rem; color: #414141; padding: 25px;}
+}
+
+.sucursal{
+	display: flex;
+	justify-content: space-evenly;
+	align-items:center;
+
+	iframe{
+			border: none;
+			border-radius: 10px;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+}
+
+iframe:hover {
+	transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Resalta la sombra */
+  }
+
+.datosSucursal{
+	h2{ color: #303030;}
+	p{color: #303030;}
+	
+}
 
 @media screen and (max-width: 768px) {
 	html{
@@ -688,7 +740,6 @@ ul{
 	
 	.cajasProducto{
 		width: 100%;
-		height: auto;
 		h3{
 			height: auto;
 		}
@@ -838,6 +889,7 @@ footer{
 	height: 560px;
 	color: white;
 	width: 100%;
+	padding-bottom: 200px;
 
 	h2{ font-size: 4.5rem;
 	    padding-top: 200px;
@@ -847,4 +899,36 @@ footer{
 	padding-left: 450px;
 	text-shadow: black 0.3em 0.3em 0.6em;
 }
+}
+
+.evento_tematico{
+	display: flex;
+	justify-content: space-between;
+	
+}
+.evento_tematico_uno{
+	background-image: url(../assets/img/flamenco-594272_1920.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	display: grid;
+	h3{
+		font-size: 2rem;
+		color: white;
+		text-shadow: black 0.1em 0.1em 0.6em;
+		padding: 15px;
+
+	}
+	h4{
+		font-size: 1.5rem;	
+		color: rgba(255, 255, 255, 0.712);}
+	p{
+		font-size: 1rem;
+		color: white;
+	}
+}
+
+.evento_tematico_reserva{
+	display: grid;
+	width: 50%;
 }
