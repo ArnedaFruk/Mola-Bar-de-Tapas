@@ -865,6 +865,36 @@ footer{
     filter:contrast(120%);
     
 }
+.ColorFondo{
+	background-color: #f1f1f1;
+}
+
+.elegidosMaridajes{
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 13px;
+	gap: 20px;
+
+	img{
+		width: 500px;
+		border-radius: 10px 10px;
+	}
+	h2{
+		color: #303030;
+	}
+	h3{
+		font-size: 1.2rem;
+		font-family:"Poppins";
+		font-weight: bold;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		color: #303030;	
+	}
+}
+	
 
 @media screen and (max-width: 768px){
     .maridajes{
@@ -881,7 +911,9 @@ footer{
 
 /*FIN DE PAGINA | SECTION MARIDAJES*/
 /*SECTION TABLAO*/
-
+.sectionTablao{
+	padding-bottom: 25px;
+}
 .tablao{
 	background-image: radial-gradient(circle, #00000010, #000000c2), url(../assets/img/evento_tematico_del_mes/banner.jpg);
 	background-size: cover; 
@@ -892,12 +924,14 @@ footer{
 	padding-bottom: 200px;
 
 	h2{ font-size: 4.5rem;
-	    padding-top: 200px;
-	    padding-left: 550px;
+		text-align: right;
+		padding-top: 230px;
+		padding-right: 95px;
 		text-shadow: black 0.1em 0.1em 0.6em;}
 	p{ font-size: 1.5rem;
-	padding-left: 450px;
-	text-shadow: black 0.3em 0.3em 0.6em;
+		text-align: right;
+		padding-right: 95px;
+		text-shadow: black 0.3em 0.3em 0.6em;
 }
 }
 
@@ -911,7 +945,8 @@ footer{
 	background-size: cover;
 	background-position: center;
 	height: 500px;
-	display: grid;
+	text-align: center;
+
 	h3{
 		font-size: 2rem;
 		color: white;
@@ -921,10 +956,14 @@ footer{
 	}
 	h4{
 		font-size: 1.5rem;	
-		color: rgba(255, 255, 255, 0.712);}
+		color: rgba(255, 255, 255, 0.712);
+		text-align: right;
+		padding-right: 10px;}
 	p{
 		font-size: 1rem;
 		color: white;
+		text-align: right;
+		padding-right: 10px;
 	}
 }
 
