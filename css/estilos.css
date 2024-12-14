@@ -869,6 +869,8 @@ footer{
     filter:contrast(120%);
     
 }
+
+
 .ColorFondo{
 	background-color: #f1f1f1;
 }
@@ -955,39 +957,53 @@ footer{
 }
 }
 
-.evento_tematico{
+.tituloProximoEvento {
+	text-align: center;
+	font-size: 2rem;
+	padding-top: 20px;
+	padding-bottom: 35px;
+	color: #303030;
+
+}
+.eventoTematico1{
+	padding-left: 10px;
 	display: flex;
-	justify-content: space-between;
+	padding-bottom: 20px;
+	img {
+		height: 500px;
+	}
+}
+
+.formEvento {
+	display:inline;
+	text-align: right;
+	margin: 50px;
+	margin-left: 300px;
+	h3{
+		padding-bottom: 50px;
+		font-size: 2.8rem;
+		
+		font-family: "poppins";
+		
+	}
+	div {
+		padding-bottom: 20px;
+	}
+	
+	}
+
+							
+.botonSub{
+	text-align: center;
+	padding: 20px;
+	
 	
 }
-.evento_tematico_uno{
-	background-image: url(../assets/img/flamenco-594272_1920.jpg);
-	background-size: cover;
-	background-position: center;
-	height: 500px;
-	text-align: center;
 
-	h3{
-		font-size: 2rem;
-		color: white;
-		text-shadow: black 0.1em 0.1em 0.6em;
-		padding: 15px;
-
-	}
-	h4{
-		font-size: 1.5rem;	
-		color: rgba(255, 255, 255, 0.712);
-		text-align: right;
-		padding-right: 10px;}
-	p{
-		font-size: 1rem;
-		color: white;
-		text-align: right;
-		padding-right: 10px;
-	}
+/*----- COMIENZO DE PAGINA CARRITO --------*/
+.container{
+	h1{ font-size: 2rem;}
 }
 
-.evento_tematico_reserva{
-	display: grid;
-	width: 50%;
-}
+
+
