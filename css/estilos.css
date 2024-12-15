@@ -1001,9 +1001,35 @@ footer{
 }
 
 /*----- COMIENZO DE PAGINA CARRITO --------*/
+
+.carritoTituloEstilo{
+	h1{
+	font-size: 2rem;
+	text-align: center;
+	padding-bottom: 25px;
+	color: #494949;
+}}
 .container{
-	h1{ font-size: 2rem;}
+	display: flex;
+	justify-content: center;
+	align-items: center; /* Opcional para centrar verticalmente */
+  }
+
+.totalEstilo{
+	text-align: center;
+	h3{
+	font-family: "poppins";
+	font-size: 1.5rem;
+	padding-top: 25px;
+}}
+
+.table{
+	width: 50%;
+	th{
+		text-align: left;
+	}
 }
+
 
 
 
