@@ -28,14 +28,18 @@ document.getElementById("formularioValido").addEventListener("click", event => {
         alert("El email no es válido.");
     }
 
-    if (telefono === "") {
-        formularioValido = false;
-        alert("El teléfono es obligatorio.");
-    }
 
-    if (cantidad === "" || isNaN(cantidad) || cantidad <= 0) {
+	if (telefono === "") {
+		formularioValido = false;
+		alert("El teléfono es obligatorio.");
+	} else if (telefono.length < 10 || telefono.length > 15) {
+		formularioValido = false;
+		alert("El teléfono debe tener entre 10 y 15 números.");
+	}
+
+    if (cantidad === "" || isNaN(cantidad) || cantidad <= 0 || cantidad > 8) {
         formularioValido = false;
-        alert("La cantidad de comensales debe ser mayor a 0.");
+        alert("La cantidad de comensales debe ser mayor a 0 y menor a 8");
     }
 
     if (formularioValido) {
