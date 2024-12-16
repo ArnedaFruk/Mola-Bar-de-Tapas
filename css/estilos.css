@@ -36,7 +36,8 @@ body{
 header{
 	position: sticky;
 	top: 0;
-	padding: 5px 15px;
+	z-index: 999;
+	padding: 1rem 3rem;
 	background-color:#4d66ab;
 	display: flex;
 	flex-direction: row;
@@ -58,26 +59,30 @@ header{
 
 	i {color: white;}
 	.navHeader{
-		width: 85%;
-		text-align: center;
-		display: inline-block;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
 		.ulHeader{
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			gap: 2rem;
 			list-style: none;
 			margin-top: 1px;
 			margin-bottom: 1px;
 		
 			.listaItem{ 
 				display: inline-block;
-				margin-left: 90px;
-				margin-right: 90px;
-				
 			
-			.linkHeader{
-			color: #ffffff;;
-			text-decoration: none;
-			display: inline-block;
-			padding-top: 5px;
-			padding-bottom: 5px;
+				.linkHeader{
+					color: #ffffff;;
+					text-decoration: none;
+					display: inline-block;
+					padding-top: 5px;
+					padding-bottom: 5px;
 				}
 			}
 		}
@@ -88,8 +93,6 @@ header{
 	color: white;
 	display: inline-block;
 	margin-right: 0;
-	
-
 }
 
 .sectionPrincipal{
@@ -124,24 +127,21 @@ header{
 		/*margin-top: 120px;*/
 		text-align: center;
 		margin: 0% auto;
-		width: 25%;
+		/*width: 25%;*/
 		border-radius: 2px;
 		border: solid #ececec 2.5px;
 		padding: 10px 20px;
 		
 		font-size: 2rem;
-		
-		
-	
-		
-		
-	
-
 	}
 	.textoColor{
 		color: white;
 		text-shadow: black 0.2em 0.2em 0.3em;
 	}
+}
+
+.divAnclaEncontranos{
+	margin: 0 auto;
 }
 
 
@@ -352,17 +352,20 @@ header{
 }
 .sectionNuestraHistoria{
 
-display: flex;
-align-items: center;
-padding-left: 20px;
-padding-right: 20px;
-gap: 40px;
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	gap: 40px;
 
-
+	div{
+		width: 50%;
+	}
 
 	img{
 		/*padding-top: 200px;*/
-		width: 600px;
+		/*width: 600px;*/
+		width: 100%;
 	}
 	p{
 		font-size: 1.5 rem;
@@ -470,6 +473,7 @@ gap: 40px;
 	background-size: cover;
 	background-position: center;
 	height: 500px;
+	text-align: center;
 	h2{
 		color: white;
 		font-size: 3rem;
@@ -493,9 +497,7 @@ gap: 40px;
 		text-align: center;
 		text-decoration: none;
 		border: solid rgb(255, 255, 255) 2px;
-		padding: 3px;
-
-		margin-left: 42%;
+		padding: 1rem;
 	}
 }
 /*FIN DEL INDEX*/
@@ -563,22 +565,20 @@ gap: 40px;
 }
 
 
-
-
 .footer{
-display: flex;
-justify-content: space-between;
-gap: 25px;
-padding: 25px 25px 25px 25px;
-p{color: white;}
-h3{
-	font-size: 1.2rem;
-	padding-bottom: 10px;
-	
-}
-ul{
-	font-size: 1rem;
-}
+	display: flex;
+	justify-content: space-between;
+	gap: 25px;
+	padding: 25px 25px 25px 25px;
+	p{color: white;}
+	h3{
+		font-size: 1.2rem;
+		padding-bottom: 10px;
+		
+	}
+	ul{
+		font-size: 1rem;
+	}
 	.logo{
 		width: 250px;
 		display: grid;
@@ -602,18 +602,18 @@ ul{
 	.fa-facebook{
 		color: #ffffff;
 		font-size: 30px;
-		padding-right: 10px;
-		padding-left: 100px;
 	}
 	.fa-instagram{
 		color: #ffffff;
 		font-size: 30px;
-		padding-right: 10px;
 	}
 
 }
 .redesSociales{
 	padding-bottom: 25px;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
 	
 	
 }
@@ -700,7 +700,7 @@ ul{
 .sucursalCercana{
 	background-color: #fdfdff;
 	text-align: center;
-	h1{font-size: 2rem; color: #414141; padding: 25px;}
+	h1{font-size: 2rem; color: #414141; padding: 3rem 1rem;}
 }
 
 .sucursal{
@@ -708,10 +708,16 @@ ul{
 	justify-content: space-evenly;
 	align-items:center;
 
+	div{
+		width: 50%;
+		padding: 0 1rem;
+	}
+
 	iframe{
-			border: none;
-			border-radius: 10px;
-			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		width: 100%;
+		border: none;
+		border-radius: 10px;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
 	}
 }
 
@@ -724,6 +730,27 @@ iframe:hover {
 	h2{ color: #303030;}
 	p{color: #303030;}
 	
+	div{
+		width: 100%;
+		margin: 1rem auto;
+	}
+}
+
+
+@media screen and (max-width: 1145px) {
+
+	.nuestrosProductos{
+		height: auto;
+	}
+	.cajasProducto{
+		width: 30%;
+	}
+
+	.formulario{
+		.centrado{
+			width: 80%;
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -731,19 +758,52 @@ iframe:hover {
 		font-size: 12px;
 	}
 
-	.sectionPrincipal {
-	
-		.anclaEncontranos {
-			width: 60%;
+	header{
+
+		flex-wrap: wrap;
+
+		.logo{
+			margin: 0 auto;
+		}
+
+		.navHeader{
+			margin-top: 0.75rem;
+
+			.ulHeader{
+				gap:1rem;
+			}
 		}
 	}
+
+	.sectionPrincipal {
+
+		padding-top: 100px;
+	}
+
+	.almaDeEspania{
+		h1{
+			font-size: 2rem;
+		}
+	}
+
+	.aUnBocadoDeDistancia{
+		margin-top: 2rem;
+		font-size: 3rem;
+	}
+	
 
 	.nuestrosProductos{
 		height: auto;
 	}
 	
 	.cajasProducto{
-		width: 100%;
+		/*width: 100%;*/
+		width: 46%;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+
+
+
 		h3{
 			height: auto;
 		}
@@ -752,6 +812,7 @@ iframe:hover {
 		}
 		a{
 			font-size: 2rem;
+			padding: 0;
 		}
 	}
 	.tarjetaSectionEvento{
@@ -779,6 +840,10 @@ iframe:hover {
 		}
 	}
 	.sectionNuestraHistoria{
+
+		div{
+			width: 100%;
+		}
 		
 		.imagenMovil{
 			display: none;
@@ -805,34 +870,68 @@ iframe:hover {
 			}
 		}
 
-}
+	}
 
 	.molaCerca{
 		a{
 			margin: 0 auto;
 			width: 60%;
 			display: block;
-			
-			
-		
 		}
 	}
+
+	.galeriaGrid{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: "cheescake"
+							 "budin"
+							 "chocotorta"
+							 "cuadradito"
+							 "alfajores";
+	
+	}
+
+	.formulario{
+		.centrado{
+			width: 100%;
+		}
+	}
+
+	.sucursal{
+		flex-wrap: wrap;
+
+		div{
+			width: 100%;
+		}
+	}
+
+	.datosSucursal{
+		margin: 2rem auto;
+		font-size: 1.5rem;
+	}
+
+
 	.footer{
 		flex-wrap: wrap;
-		div
-		{width: 100%;}
+		
+		div{
+			width: 100%;
+		}
+
+		.membresia-movil{
+			text-align: center;
+		}
+
+		.redesSociales{
+			justify-content: center;
+		}
 	}
 }
+
 /*FIN DE PAGINA | CONTACTO*/
 /*SECTION MARIDAJES*/
 
-body{
-    background: #ffffff;
-}
-header{
-    padding: 20px;
-	
-}
+
 	
 footer{
    
@@ -919,6 +1018,16 @@ footer{
 	
 
 @media screen and (max-width: 768px){
+	.elegidosMaridajes{
+		flex-wrap: wrap;
+		div{
+			margin: 2rem 1rem;
+			width: 100%;
+		}
+		img{
+			width: 100%;
+		}
+	}
     .maridajes{
         flex-wrap: wrap;
     }
@@ -954,8 +1063,9 @@ footer{
 		text-align: right;
 		padding-right: 95px;
 		text-shadow: black 0.3em 0.3em 0.6em;
+	}
 }
-}
+
 
 .tituloProximoEvento {
 	text-align: center;
@@ -966,19 +1076,29 @@ footer{
 
 }
 .eventoTematico1{
-	padding-left: 10px;
+	padding: 3rem;
 	display: flex;
-	padding-bottom: 20px;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 4rem;
+
+
+}
+
+
+.div-img-evento{
+	text-align: center;
+	margin: 0 auto;
 	img {
 		height: 500px;
 	}
+
 }
 
 .formEvento {
-	display:inline;
-	text-align: right;
-	margin: 50px;
-	margin-left: 300px;
+
+	margin: 0 auto;
+	
 	h3{
 		padding-bottom: 50px;
 		font-size: 2.8rem;
@@ -989,18 +1109,64 @@ footer{
 	div {
 		padding-bottom: 20px;
 	}
-	
-	}
 
-							
-.botonSub{
-	text-align: center;
-	padding: 20px;
-	
+	label{
+		display: block;
+	}
+	input{
+		width: 100%;
+	}
 	
 }
 
+							
+.botonSub{
+	input{
+		text-align: center;
+		/*width: auto;*/
+		/*font-size: 1.25rem;*/
+		/*background-color: #4d66ab;*/
+	
+	}
+}
+
+
+@media screen and (max-width: 768px){
+
+	.eventoTematico1{
+		flex-wrap: wrap;
+
+		.div-img-evento{
+			width: 100%;
+			img{
+				height: auto;
+				width: 100%;
+			}
+		}
+	}
+
+
+}
+
 /*----- COMIENZO DE PAGINA CARRITO --------*/
+
+.carrito{
+	min-height: 55vh;
+	padding: 6rem 0rem;
+	margin: 0 auto;
+	width: 80%;
+
+	@media screen and (max-width: 768px){
+		width: 90%;
+	}
+}
+
+.bordeticket{
+	/*border: solid hsl(0, 0%, 81%) 1px;*/
+	padding: 6rem 1rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	/*background-color: #414141;*/
+}
 
 .carritoTituloEstilo{
 	h1{
@@ -1024,7 +1190,8 @@ footer{
 }}
 
 .table{
-	width: 50%;
+	width: 80%;
+	margin: 0 auto;
 	th{
 		text-align: left;
 	}
