@@ -97,7 +97,7 @@ header{
 /* COMIENZO DEL INDEX */
 .sectionPrincipal{
 
-	background-image: radial-gradient(circle, #00000086, #00000027), url(/assets/img/cuadraditos.jpg);
+	background-image: radial-gradient(circle, #00000086, #00000027), url(../assets/img/cuadraditos.jpg);
 	background-size: cover; /*Para que la imagen ocupe todo el espacio disponible*/
 	background-position: center; /*Para que la imagen siempre comience desde el centro del contenedor y se expanda*/
 	/*height: 95vh;*/
@@ -246,7 +246,7 @@ header{
 
 }
 .secretosDeNuestroChef{
-	background-image: radial-gradient(circle, #000000e1, #00000000), url(/assets/img/alcoholic-beverages-1845295_1920.jpg);
+	background-image: radial-gradient(circle, #000000e1, #00000000), url(../assets/img/alcoholic-beverages-1845295_1920.jpg);
 	background-size: cover;
 	background-position: top center;
 	color: white;
@@ -273,7 +273,7 @@ header{
 }
 
 .eventoTematicoDelMes{
-	background-image: radial-gradient(circle, #000000e1, #00000000), url(/assets/img/flamenco-594272_1920.jpg);
+	background-image: radial-gradient(circle, #000000e1, #00000000), url(../assets/img/flamenco-594272_1920.jpg);
 	background-size: cover;
 	background-position: top center;
 	height: 400px;
@@ -432,7 +432,7 @@ header{
 }
 
 .molaCerca{
-	background-image: radial-gradient(circle, #000000e1, #00000000), url(/assets/img/Imagen_encontranos.jpg);
+	background-image: radial-gradient(circle, #000000e1, #00000000), url(../assets/img/Imagen_encontranos.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 500px;
@@ -586,7 +586,7 @@ header{
 /*INICIO DE PAGINA | CONTACTO*/
 
 .formulario{
-	background-image: radial-gradient(circle, #00000086, #00000027), url(/assets/img/Encontranos.jpg);
+	background-image: radial-gradient(circle, #00000086, #00000027), url(../assets/img/Encontranos.jpg);
 	background-size: cover; /*Para que la imagen ocupe todo el espacio disponible*/
 	background-position: center; 
 	width: 100%;
@@ -1002,7 +1002,7 @@ footer{
 	padding-bottom: 25px;
 }
 .tablao{
-	background-image: radial-gradient(circle, #00000010, #000000c2), url(/assets/img/evento_tematico_del_mes/banner.jpg);
+	background-image: radial-gradient(circle, #00000010, #000000c2), url(../assets/img/evento_tematico_del_mes/banner.jpg);
 	background-size: cover; 
 	background-position: center; 
 	height: 560px;
